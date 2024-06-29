@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculate Your BMI</title>
+        <style>
+                body {
+                        padding: 40px;
+                }
+
+                p {
+                        font-weight: 600;
+                        line-height: 63%;
+
+                }
+
+                h3 {
+                        font-size: 25px;
+                        margin-top: 20px;
+                        line-height: 53%;
+                }
+
+                button {
+                        padding: 12px 15px;
+                        background-color: rgb(246, 78, 123);
+                        border: none;
+                        border-radius: 5px;
+                        color: white;
+                        font-size: 15px;
+                        font-weight: 600;
+                }
+
+                input {
+                        padding: 8px 15px;
+                }
+
+                .container {
+
+                        text-align: center;
+                }
+
+                hr {
+                        width: 50%;
+                }
+        </style>
+</head>
+
+<body>
+        <div class="container">
+                <h1>BMI Calculator</h1>
+                <form>
+                        <h4>Height in CM:
+                                <input placeholder="Enter your height" name="number" id="height">
+                        </h4>
+
+                        <h4>Weight in KG:
+                                <input placeholder="Enter your weight" id="weight">
+                        </h4>
+                        <button>Calculate</button>
+                        <div id="result">
+                        </div>
+                        <div id="weight_guide">
+                                <h3>BMI weight guide</h3>
+                                <hr>
+                                <p>Under weight: less then 18.6</p>
+                                <p>Normal range: 18.6 to 24.9</p>
+                                <p>Overweight: Greater then 24.9</p>
+                        </div>
+                </form>
+        </div>
+
+
+        <script src="./index.js"></script>
+</body>
+
+</html>
